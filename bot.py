@@ -55,7 +55,7 @@ def notificacao():
     if status == "approved":
         chat_id = usuarios_aguardando.get(payment_id)
         if chat_id:
-            bot.send_message(chat_id=chat_id, text=f"✅ Pagamento confirmado! Aqui está seu acesso:
+            bot.send_message(chat_id=chat_id, text=f'✅ Pagamento confirmado! Aqui está seu acesso: https://drive.google.com/drive/folders/169K1_jRdvYcQvydz7HicB3OlQHuRGJaX?usp=drive_link')
 {DRIVE_LINK}")
     return jsonify({"status": "ok"})
 
